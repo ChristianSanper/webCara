@@ -1,0 +1,99 @@
+.tituloPrincipal {
+    font-size: 450%;
+    font-family: 'Oleo Script';
+    color: #BF8040;
+    font-weight: 700;
+    margin: 5% 0%;
+}
+
+.tituloTxt {
+    font-size: 350%;
+    font-family: 'Oleo Script';
+    color: #5B9279;
+    font-weight: 700;
+    margin: 3% 0%;
+}
+
+.linkTxt {
+    font-size: 150%;
+    font-family: 'Oleo Script';
+    color: #BF8040;
+    font-weight: 400;
+    margin: 3% 0%;
+}
+
+.paragTxt {
+    font-size: 140%;
+    margin: 3% 0%;
+    color: black;
+    line-height: 28px;
+}
+
+.footer {
+    color: white;
+    background-color: #5B9279;
+    margin: 10px 0px 15px 0px;
+    font-size: 110%;
+}
+
+.titulo {
+    margin: 0% 20% 0% 0%;
+}
+
+.creditos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container {
+    background-color: white;
+    padding: 0% 5%;
+}
+
+body {
+    background-color: #BF8040;
+}
+
+canvas {
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+.row {
+    padding: 5%;
+}
+
+.card {
+    margin: 3% 0%;
+}
+
+.card-text {
+    color: black;
+}
+
+@media (min-width: 400px) and (max-width: 767.98px) {
+    .tituloPrincipal {
+        font-size: 440%;
+    }
+
+    .titulo {
+        margin: 0%;
+    }
+
+    .tituloTxt {
+        font-size: 300%;
+    }
+
+    .linkTxt,
+    .paragTxt {
+        font-size: 120%;
+    }
+
+    .tituloPrincipal,
+    .tituloTxt,
+    .link {
+        text-align: center;
+    }
+
+}

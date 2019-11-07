@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ES">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marioneta con P5.js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+    <script src="JS/sketch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.js"></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-6 titulo">
+                <h1 class="tituloPrincipal">Marioneta con P5.js</h1>
+            </div>
+            <div class="col-lg-4 titulo">
+                <h1 class="tituloTxt">Briefing</h1>
+            </div>
+            <div class="col-lg-6">
+                <p class="paragTxt">Este es un proyecto realizado con p5.js.<br>
+                    Este proyecto nace de la propuesta de realizar una ilustración animada que reaccione a estimulas sonoros externos.<br><br>
+                    Dichos estimulos son los sonidos que capta el altavoz del soporte al que se ejecute el archivo al que este la ilustracion.
+                    <br><br>
+                    A continuación podras probarlo con permitir el uso del microfono y clicar la imagen inferior.</p>
+            </div>
+            <div class="col-lg-6 creditos">
+                <p class="paragTxt">© Christian Santos Pérez , 2019</p>
+            </div>
+        </div>
+
+        <div class="col-12" id="canvas">
+        </div>
+
+        <div class="row">
+            <div class="col-12 titulo">
+                <h1 class="tituloTxt">¿Como lo he creado?</h1>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/1.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">1. Bocetos</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/2.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">2. Crear carpeta contenedora</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/3.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">3. Crear sketch.js</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/4.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">4. Definir canvas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/5.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">5. Definir detector de sonido y activador</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/6.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">6. Definir fondo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/7.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">7. Crear orejas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/8.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">8. Crear cabeza y gorro</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/9.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">9. Crear ojos y cejas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/10.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">10. Crear nariz y boca</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/11.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">11. Canvas responsive</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="IMG/12.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">12. Acabado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 titulo">
+                <h1 class="tituloTxt">Conclusiones</h1>
+            </div>
+            <div class="col-lg-6">
+                <p class="paragTxt">Este ha sido un proyecto bastante entretenido de realizar.<br>
+                    Lo he disfrutado bastante (incluyendo todas las chorradas que he hecho hablando con mi PC) y me ha ayudado a ver otra faceta del diseño interactivo no tan centrado a maquetar webs.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 titulo">
+                <h1 class="tituloTxt">¿Quieres verla en detalle?</h1>
+            </div>
+            <div class="col-lg-6 link">
+                <a href="https://christiansanper.github.io/miCara/" target="_blank" class="linkTxt">https://christiansanper.github.io/miCara/</a>
+            </div>
+        </div>
+    </main>
+
+</body></html>
